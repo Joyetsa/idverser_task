@@ -17,7 +17,7 @@ describe('CheapFlights Homepage', () => {
      });
 
      it('should search for flights', async () => {
-          const destination = 'Sydney';
+          const destination = 'Melbourne';
           const departure = '1 June, 2025';
           const returnDate = '10 June, 2025';
 

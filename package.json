@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio run ./wdio.conf.ts",
-   "test:api": "mocha --require ts-node/register test/api/**/*.ts"
+    "test:api": "mocha --loader ts-node/esm-loader test/api/**/*.ts"
+
+
   },
   "keywords": [],
   "author": "",
@@ -23,6 +25,7 @@
     "@wdio/visual-service": "^7.0.0",
     "axios": "^1.9.0",
     "chai": "^5.2.0",
+    "mocha": "^11.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }

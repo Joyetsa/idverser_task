@@ -1,31 +1,29 @@
 {
     "compilerOptions": {
-        "moduleResolution": "node",
-        "module": "commonjs", // ✅ important for Mocha + ts-node
-        "target": "es2022",
-        "lib": [
-            "es2022",
-            "dom"
-        ],
-        "types": [
-            "node",
-            "mocha",
-            "@wdio/globals/types",
-            "expect-webdriverio",
-            "@wdio/mocha-framework"
-        ],
-        "skipLibCheck": true,
-        "noEmit": true,
-        "allowImportingTsExtensions": true,
-        "resolveJsonModule": true,
-        "isolatedModules": true,
-        "strict": true,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true
+      "target": "ES2022",                       // Modern JavaScript target
+      "module": "commonjs",                     // CommonJS module system for Node.js compatibility
+      "moduleResolution": "node",               // Resolves modules like Node.js does
+      "lib": ["ES2022", "DOM"],                 // Includes modern JS and browser types
+      "types": [
+        "node",
+        "mocha",
+        "@wdio/globals/types",
+        "expect-webdriverio",
+        "@wdio/mocha-framework"
+      ],
+      "skipLibCheck": true,                     // Skips checking .d.ts files
+      "noEmit": true,                           // Don’t output compiled files
+      "allowImportingTsExtensions": true,       // Allows `.ts` in import paths
+      "resolveJsonModule": true,                // Allows importing JSON files
+      "isolatedModules": true,                  // Ensures files can be transpiled in isolation
+      "strict": true,                           // Enables all strict type-checking options
+      "noUnusedLocals": true,                   // Warn about unused locals
+      "noUnusedParameters": true,               // Warn about unused parameters
+      "noFallthroughCasesInSwitch": true        // Prevent fallthrough in switch statements
     },
     "include": [
-        "test",
-        "wdio.conf.ts"
+      "test",           // Include test specs
+      "wdio.conf.ts"    // Include WebDriverIO config
     ]
-}
+  }
+  
